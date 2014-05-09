@@ -3,18 +3,23 @@
 
 accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz
 
-linear_acceleration_walking
-angular_velocity_walking
-linear_acceleration_walking_upstairs
-angular_velocity_walking_upstairs
-linear_acceleration_walking_downstairs
-angular_velocity_walking_downstairs
-linear_acceleration_sitting
-angular_velocity_sitting
-linear_acceleration_standing
-angular_velocity_standing
-linear_acceleration_laying
-angular_velocity_laying
+ g for accelerometer, deg/s for gyroscope
+http://www.starlino.com/imu_guide.html
+
+| variable_names                          |  measurement units |
+| --------------------------------------- | ------------- |
+| linear_acceleration_walking             | 3-axial data from accelerometer  |
+| angular_velocity_walking                | 3-axial data from byroscope in  |
+| linear_acceleration_walking_upstairs    |
+| angular_velocity_walking_upstairs       |
+| linear_acceleration_walking_downstairs  |
+| angular_velocity_walking_downstairs     |
+| linear_acceleration_sitting             |
+| angular_velocity_sitting                |
+| linear_acceleration_standing            |
+| angular_velocity_standing               |
+| linear_acceleration_laying              |
+| angular_velocity_laying                 |
 
 WALKING
 WALKING_UPSTAIRS
