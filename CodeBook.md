@@ -1,4 +1,5 @@
-1 Info about the variables including units in the data set not included in the tidy data
+## This Code Book has:
+1. Info about the variables including units in the data set not included in the tidy data
  
 
 accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz
