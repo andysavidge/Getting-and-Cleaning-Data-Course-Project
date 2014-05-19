@@ -7,20 +7,20 @@ accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial
  g for accelerometer, deg/s for gyroscope
 http://www.starlino.com/imu_guide.html
 
-| variable_names                          |  measurement units |
+| variable names                          |  measurement units |
 | --------------------------------------- | ------------- |
-| linear_acceleration_walking             | 3-axial data from accelerometer  |
-| angular_velocity_walking                | 3-axial data from byroscope in  |
-| linear_acceleration_walking_upstairs    |
-| angular_velocity_walking_upstairs       |
-| linear_acceleration_walking_downstairs  |
-| angular_velocity_walking_downstairs     |
-| linear_acceleration_sitting             |
-| angular_velocity_sitting                |
-| linear_acceleration_standing            |
-| angular_velocity_standing               |
-| linear_acceleration_laying              |
-| angular_velocity_laying                 |
+| linear.acceleration.walking             | 3-axial data from accelerometer  |
+| angular.velocity.walking                | 3-axial data from byroscope in  |
+| linear.acceleration.walking.upstairs    |
+| angular.velocity.walking.upstairs       |
+| linear.acceleration.walking.downstairs  |
+| angular.velocity.walking.downstairs     |
+| linear.acceleration.sitting             |
+| angular.velocity.sitting                |
+| linear.acceleration.standing            |
+| angular.velocity.standing               |
+| linear.acceleration.laying              |
+| angular.velocity.laying                 |
 
 WALKING
 WALKING_UPSTAIRS
