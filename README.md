@@ -1,7 +1,28 @@
-Getting-and-Cleaning-Data-Course-Project
+Getting.and.Cleaning.Data.Course.Project
 ========================================
 
-20140505 MOOC Coursera project
+20140505 MOOC Coursera README.md file for Getting and Cleaning Data Course Project
+
+## Starting files and assumptions
+   Data for project downloaded from Internet available file: 
+       https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+   Unzipped all files and moved every file into just one subdirectory named 'data' on my computer. 
+   This 'data' subdirectory is in my R my working directory and my R script uses .\data\afilename.ext
+   to get the wanted data files.
+   
+## R script named run_analysis.R  was used to process the data as follows:
+   merged training and test data sets (2 variable value files, 2 subject id files, 2 activity type files, 
+   and one time and frequency domain variable names file) to create one large data set. 
+   Added 561 cleaned up time and frequency domain variable names to this large data set.
+   Also added subject id.  Also added converted from number to text cleaned up activity type columns 
+   to this large data set.
+
+   extracted from the large data set only the variable measurements on the mean and standard deviation 
+   for each one of the 561 variables by selecting all variables names that contained either 'mean' or 'std'
+   
+   made a second, independent tidy data set with the average of each variable for each activity and each subject
+   of the above 'mean' & 'std' extracted smaller data set
+
 
 ## Submit: 
 1. a tidy data set as described below, 
