@@ -35,7 +35,7 @@
    1. 'subject' each of 30 'subject' ( 1 thru 30 ) and by
    2. 'activity' each of six 'activity' (laying, sitting, standing, walking, walking.downstairs, walking.upstairs)
 
-   The before getting 'mean' data had 10299 obs of 86 num variables and the two 'subject' and 'activity' variables
+The before getting 'mean' data had 10299 obs of 86 num variables and the two 'subject' and 'activity' variables
 
 ####   The 88 variable units(see table below this line):
 
