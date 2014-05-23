@@ -17,16 +17,14 @@ This 'data' subdirectory is in my R my working directory and my R script uses ".
 to get the wanted "afilename.ext" data files.
    
 ## run_analysis.R script processed the starting data as follows:
-1. Merged training and test data sets (2 variable value files, 2 subject id files, 2 activity type files, 
-and one time and frequency domain variable names file) to create one large data set. 
+1. Merged training and test data sets (2 variable value files, 2 subject id files, 2 activity type files, one activity names file, and one time and frequency domain variable names file) to create one large data set. 
 2. Added 561 cleaned up time and frequency domain variable names to this large data set.
 3. Added subject id.  
 4. Added activity type (converted from number to cleaned up text) to this large data set.
 5. Extracted from the large data set only the variable measurements on the mean and standard deviation 
 for each one of the 561 variables by selecting all variables names that contained either 'mean' or 'std' (a total of
 86 selected variables)
-6. Made a second, independent tidy data set with the average of each variable for each activity and each subject
-of the above 'mean' & 'std' extracted data set
+6. Made a second, independent tidy data set with the means of the 86 variables for each activity variable and each subject variable via processing the above 'mean' & 'std' extracted data set.
 
 ## Additional Course Project items:
 * Submitted the tidy data set from '6.' above and named **tidydata.txt** by uploading it to the course website.
