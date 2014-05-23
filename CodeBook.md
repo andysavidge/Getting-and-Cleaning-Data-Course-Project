@@ -1,5 +1,3 @@
-## This Code Book has:
-
 ## Study Description:
    * The data study was done by Andy Savidge (andysavidge@gmail.com)
    * The study was done for a Getting and Cleaning Data Course PROJECT (via. a Coursera MOOC done in May 2014)
@@ -7,13 +5,13 @@
    * The cleaned data was used to produce a smaller tidy data set named **tidydata.txt** that this codebook documents
 
 ## Initial data:
-   The supplied initial data files came from data collected from the accelerometers from the Samsung Galaxy S smartphone
+   The supplied initial data files all came from data collected from the accelerometers from the Samsung Galaxy S smartphone.
    
-   The Internet files came from the course provided source website at:
+   All the original data and downloaded Internet files came from the course provided source website at:
    
      http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-   All the data for the project came from a course provided zip file at:
+   All the data read by the R script for the project came from a course provided zip file at:
    
      https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
    
@@ -27,7 +25,7 @@
    7. X_test.txt
    8. y_test.txt
    
-   The output of the R script file is the tidy dataset **tidydata.txt** and was uploaded via the project webpage
+####   The output of the R script file is the tidy dataset **tidydata.txt** and was uploaded via the project webpage
    
 ## **tidydata.txt** info 
    Below is a table giving info about the all variables gotten by using the R function str() on the cleaned data 
@@ -39,7 +37,7 @@
 
    The before getting 'mean' data had 10299 obs of 86 num variables and the two 'subject' and 'activity' variables
 
-   The 88 variable units(see table below this line):
+####   The 88 variable units(see table below this line):
 
 | $ variable                              | Units                                                    |
 |-----------------------------------------|----------------------------------------------------------|
@@ -52,7 +50,7 @@
    
    
    
-   'data.frame':	180 obs. of  88 variables(names in table below this line):
+####   Variable names of output 'data.frame':	180 obs. of  88 variables(names in table below this line):
    
 | $ variable                              | type  actual data ...                                    |
 |-----------------------------------------|----------------------------------------------------------|
