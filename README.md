@@ -28,16 +28,16 @@ for each one of the 561 variables by selecting all variables names that containe
 6. Made a second, independent tidy data set with the average of each variable for each activity and each subject
 of the above 'mean' & 'std' extracted data set
 
-## Additional Course Project steps:
-1. Submitted the tidy data set from '6.' above and named **tidydata.txt** by uploading it to the course website.
-2. Submitted my Github repository link:
+## Additional Course Project items:
+* Submitted the tidy data set from '6.' above and named **tidydata.txt** by uploading it to the course website.
+* Submitted my Github repository link:
 
    https://github.com/andysavidge/Getting-and-Cleaning-Data-Course-Project/
 
-3. My Github.com repository contains the following 3 files for the Course Project:
-   README.md (this file)
-   run_analysis.R (the R script file)
-   codebook.md (the codebook for the **tidydata.txt** uploaded tidy data set output file)
+* My Github.com repository contains the following 3 files for the Course Project:
+ 1. README.md (this file)
+ 2. run_analysis.R (the R script file)
+ 3. codebook.md (the codebook for the **tidydata.txt** uploaded tidy data set output file)
 
 ## Submit: 
 1. a tidy data set as described below, 
