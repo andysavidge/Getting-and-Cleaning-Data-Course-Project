@@ -44,14 +44,14 @@ The before getting 'mean' data had 10299 obs of 86 num variables and the two 'su
 
 ####   The 88 variable units(see table below this line):
 
-| $ variable                              | Units                                                    |
+| $ variable                              | type: Units                                                    |
 |-----------------------------------------|----------------------------------------------------------|
-| $ subject                               | # is an identifying number for each person (1:30)        |
-| $ activity                              | word for activity type: "laying" "sitting" "standing"    |
-|                                         | "walking" "walkingupstairs" "walkingdownstairs"          |
-| $ timebodyaccmeanx                      | # is a real number                                       |
-| ...   86 total num variables            | " units were all normalized between 1 and -1             | 
-| $ freqbodybodygyrojerkmagstd            | " see source website given above for measured units etc. | 
+| $ subject                               | chr: is an identifying number for each person (1:30)        |
+| $ activity                              | chr: a word for activity: "laying" "sitting" "standing"     |
+|                                         | "walking" "walkingupstairs" "walkingdownstairs"             |
+| $ timebodyaccmeanx                      | num: real number (normalized between 1 and -1)              |
+| ...   86 total num variables            | ...: ...                                                    | 
+| $ freqbodybodygyrojerkmagstd            | num: see source website given above for measured units etc. | 
    
    
    
