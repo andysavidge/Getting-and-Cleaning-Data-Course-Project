@@ -31,6 +31,11 @@
    Below is a table giving info about the all variables gotten by using the R function str() on the cleaned data 
    that was used in writing the output **tidydata.txt** file.
 
+   Variable names were gotten from the features.txt and activity_labels.txt.   These original variable names were 
+   all convert to lowercase [a-z] letters and all non [a-z] characters were removed.  For name clarity the variable  
+   names beginning with t... and f... were changed to time... and freq... since these variables deal with time and
+   freq(uency) domains(see original documentation).
+
    The **tidydata.txt** data consists of the mean value of the 86 num variables with 180 obs. that were split out by 
    1. 'subject' each of 30 'subject' ( 1 thru 30 ) and by
    2. 'activity' each of six 'activity' (laying, sitting, standing, walking, walking.downstairs, walking.upstairs)
