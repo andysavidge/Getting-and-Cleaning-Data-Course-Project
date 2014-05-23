@@ -48,103 +48,102 @@ The before getting 'mean' data had 10299 obs of 86 num variables and the two 'su
 |-----------------------------------------|----------------------------------------------------------|
 | $ subject                               | # is an identifying number for each person (1:30)        |
 | $ activity                              | word for activity type: "laying" "sitting" "standing"    |
-|                                         | "walking" "walking.upstairs" "walking.downstairs"        |
-| $ tbody.acc.meanx                       | # is a real number                                       |
+|                                         | "walking" "walkingupstairs" "walkingdownstairs"          |
+| $ timebodyaccmeanx                      | # is a real number                                       |
 | ...   86 total num variables            | " units were all normalized between 1 and -1             | 
-| $ fbodybody.gyro.jerk.mag.std           | " see source website given above for measured units etc. | 
+| $ freqbodybodygyrojerkmagstd            | " see source website given above for measured units etc. | 
    
    
    
 ####   Variable names of output 'data.frame':	180 obs. of  88 variables(names in table below this line):
    
-| $ variable                              | type  actual data ...                                    |
-|-----------------------------------------|----------------------------------------------------------|
-| $ subject                               | chr  "1" "1" "1" "1" ...                                 |
-| $ activity                              | chr  "laying" "sitting" "standing" "walking" ...         |
-| $ tbody.acc.meanx                       | num  0.222 0.261 0.279 0.277 0.289 ...                   |
-| $ tbody.acc.meany                       | num  -0.04051 -0.00131 -0.01614 -0.01738 -0.00992 ...    |
-| $ tbody.acc.meanz                       | num  -0.113 -0.105 -0.111 -0.111 -0.108 ...              |
-| $ tgravity.acc.meanx                    | num  -0.249 0.832 0.943 0.935 0.932 ...                  |
-| $ tgravity.acc.meany                    | num  0.706 0.204 -0.273 -0.282 -0.267 ...                |
-| $ tgravity.acc.meanz                    | num  0.4458 0.332 0.0135 -0.0681 -0.0621 ...             |
-| $ tbody.acc.jerk.meanx                  | num  0.0811 0.0775 0.0754 0.074 0.0542 ...               |
-| $ tbody.acc.jerk.meany                  | num  0.003838 -0.000619 0.007976 0.028272 0.02965 ...    |
-| $ tbody.acc.jerk.meanz                  | num  0.01083 -0.00337 -0.00369 -0.00417 -0.01097 ...     |
-| $ tbody.gyro.meanx                      | num  -0.0166 -0.0454 -0.024 -0.0418 -0.0351 ...          |
-| $ tbody.gyro.meany                      | num  -0.0645 -0.0919 -0.0594 -0.0695 -0.0909 ...         |
-| $ tbody.gyro.meanz                      | num  0.1487 0.0629 0.0748 0.0849 0.0901 ...              |
-| $ tbody.gyro.jerk.meanx                 | num  -0.1073 -0.0937 -0.0996 -0.09 -0.074 ...            |
-| $ tbody.gyro.jerk.meany                 | num  -0.0415 -0.0402 -0.0441 -0.0398 -0.044 ...          |
-| $ tbody.gyro.jerk.meanz                 | num  -0.0741 -0.0467 -0.049 -0.0461 -0.027 ...           |
-| $ tbody.acc.magmean                     | num  -0.8419 -0.9485 -0.9843 -0.137 0.0272 ...           |
-| $ tgravity.acc.magmean                  | num  -0.8419 -0.9485 -0.9843 -0.137 0.0272 ...           |
-| $ tbody.acc.jerk.magmean                | num  -0.9544 -0.9874 -0.9924 -0.1414 -0.0894 ...         |
-| $ tbody.gyro.magmean                    | num  -0.8748 -0.9309 -0.9765 -0.161 -0.0757 ...          |
-| $ tbody.gyro.jerk.magmean               | num  -0.963 -0.992 -0.995 -0.299 -0.295 ...              |
-| $ fbody.acc.meanx                       | num  -0.9391 -0.9796 -0.9952 -0.2028 0.0382 ...          |
-| $ fbody.acc.meany                       | num  -0.86707 -0.94408 -0.97707 0.08971 0.00155 ...      |
-| $ fbody.acc.meanz                       | num  -0.883 -0.959 -0.985 -0.332 -0.226 ...              |
-| $ fbody.acc.meanfreqx                   | num  -0.1588 -0.0495 0.0865 -0.2075 -0.3074 ...          |
-| $ fbody.acc.meanfreqy                   | num  0.0975 0.0759 0.1175 0.1131 0.0632 ...              |
-| $ fbody.acc.meanfreqz                   | num  0.0894 0.2388 0.2449 0.0497 0.2943 ...              |
-| $ fbody.acc.jerk.meanx                  | num  -0.9571 -0.9866 -0.9946 -0.1705 -0.0277 ...         |
-| $ fbody.acc.jerk.meany                  | num  -0.9225 -0.9816 -0.9854 -0.0352 -0.1287 ...         |
-| $ fbody.acc.jerk.meanz                  | num  -0.948 -0.986 -0.991 -0.469 -0.288 ...              |
-| $ fbody.acc.jerk.meanfreqx              | num  0.132 0.257 0.314 -0.209 -0.253 ...                 |
-| $ fbody.acc.jerk.meanfreqy              | num  0.0245 0.0475 0.0392 -0.3862 -0.3376 ...            |
-| $ fbody.acc.jerk.meanfreqz              | num  0.02439 0.09239 0.13858 -0.18553 0.00937 ...        |
-| $ fbody.gyro.meanx                      | num  -0.85 -0.976 -0.986 -0.339 -0.352 ...               |
-| $ fbody.gyro.meany                      | num  -0.9522 -0.9758 -0.989 -0.1031 -0.0557 ...          |
-| $ fbody.gyro.meanz                      | num  -0.9093 -0.9513 -0.9808 -0.2559 -0.0319 ...         |
-| $ fbody.gyro.meanfreqx                  | num  -0.00355 0.18915 -0.12029 0.01478 -0.10045 ...      |
-| $ fbody.gyro.meanfreqy                  | num  -0.0915 0.0631 -0.0447 -0.0658 0.0826 ...           |
-| $ fbody.gyro.meanfreqz                  | num  0.010458 -0.029784 0.100608 0.000773 -0.075676 ...  |
-| $ fbody.acc.magmean                     | num  -0.8618 -0.9478 -0.9854 -0.1286 0.0966 ...          |
-| $ fbody.acc.magmeanfreq                 | num  0.0864 0.2367 0.2846 0.1906 0.1192 ...              |
-| $ fbodybody.acc.jerk.magmean            | num  -0.9333 -0.9853 -0.9925 -0.0571 0.0262 ...          |
-| $ fbodybody.acc.jerk.magmeanfreq        | num  0.2664 0.3519 0.4222 0.0938 0.0765 ...              |
-| $ fbodybody.gyro.magmean                | num  -0.862 -0.958 -0.985 -0.199 -0.186 ...              |
-| $ fbodybody.gyro.magmeanfreq            | num  -0.139775 -0.000262 -0.028606 0.268844 0.349614 ... |
-| $ fbodybody.gyro.jerk.magmean           | num  -0.942 -0.99 -0.995 -0.319 -0.282 ...               |
-| $ fbodybody.gyro.jerk.magmeanfreq       | num  0.176 0.185 0.334 0.191 0.19 ...                    |
-| $ angletbody.acc.meangravity            | num  0.021366 0.027442 -0.000222 0.060454 -0.002695 ...  |
-| $ angletbody.acc.jerk.meangravity.mean  | num  0.00306 0.02971 0.02196 -0.00793 0.08993 ...        |
-| $ angletbody.gyro.meangravity.mean      | num  -0.00167 0.0677 -0.03379 0.01306 0.06334 ...        |
-| $ angletbody.gyro.jerk.meangravity.mean | num  0.0844 -0.0649 -0.0279 -0.0187 -0.04 ...            |
-| $ angle.x.gravity.mean                  | num  0.427 -0.591 -0.743 -0.729 -0.744 ...               |
-| $ angle.y.gravity.mean                  | num  -0.5203 -0.0605 0.2702 0.277 0.2672 ...             |
-| $ angle.z.gravity.mean                  | num  -0.3524 -0.218 0.0123 0.0689 0.065 ...              |
-| $ tbody.acc.stdx                        | num  -0.928 -0.977 -0.996 -0.284 0.03 ...                |
-| $ tbody.acc.stdy                        | num  -0.8368 -0.9226 -0.9732 0.1145 -0.0319 ...          |
-| $ tbody.acc.stdz                        | num  -0.826 -0.94 -0.98 -0.26 -0.23 ...                  |
-| $ tgravity.acc.stdx                     | num  -0.897 -0.968 -0.994 -0.977 -0.951 ...              |
-| $ tgravity.acc.stdy                     | num  -0.908 -0.936 -0.981 -0.971 -0.937 ...              |
-| $ tgravity.acc.stdz                     | num  -0.852 -0.949 -0.976 -0.948 -0.896 ...              |
-| $ tbody.acc.jerk.stdx                   | num  -0.9585 -0.9864 -0.9946 -0.1136 -0.0123 ...         |
-| $ tbody.acc.jerk.stdy                   | num  -0.924 -0.981 -0.986 0.067 -0.102 ...               |
-| $ tbody.acc.jerk.stdz                   | num  -0.955 -0.988 -0.992 -0.503 -0.346 ...              |
-| $ tbody.gyro.stdx                       | num  -0.874 -0.977 -0.987 -0.474 -0.458 ...              |
-| $ tbody.gyro.stdy                       | num  -0.9511 -0.9665 -0.9877 -0.0546 -0.1263 ...         |
-| $ tbody.gyro.stdz                       | num  -0.908 -0.941 -0.981 -0.344 -0.125 ...              |
-| $ tbody.gyro.jerk.stdx                  | num  -0.919 -0.992 -0.993 -0.207 -0.487 ...              |
-| $ tbody.gyro.jerk.stdy                  | num  -0.968 -0.99 -0.995 -0.304 -0.239 ...               |
-| $ tbody.gyro.jerk.stdz                  | num  -0.958 -0.988 -0.992 -0.404 -0.269 ...              |
-| $ tbody.acc.mag.std                     | num  -0.7951 -0.9271 -0.9819 -0.2197 0.0199 ...          |
-| $ tgravity.acc.mag.std                  | num  -0.7951 -0.9271 -0.9819 -0.2197 0.0199 ...          |
-| $ tbody.acc.jerk.mag.std                | num  -0.9282 -0.9841 -0.9931 -0.0745 -0.0258 ...         |
-| $ tbody.gyro.mag.std                    | num  -0.819 -0.935 -0.979 -0.187 -0.226 ...              |
-| $ tbody.gyro.jerk.mag.std               | num  -0.936 -0.988 -0.995 -0.325 -0.307 ...              |
-| $ fbody.acc.stdx                        | num  -0.9244 -0.9764 -0.996 -0.3191 0.0243 ...           |
-| $ fbody.acc.stdy                        | num  -0.834 -0.917 -0.972 0.056 -0.113 ...               |
-| $ fbody.acc.stdz                        | num  -0.813 -0.934 -0.978 -0.28 -0.298 ...               |
-| $ fbody.acc.jerk.stdx                   | num  -0.9642 -0.9875 -0.9951 -0.1336 -0.0863 ...         |
-| $ fbody.acc.jerk.stdy                   | num  -0.932 -0.983 -0.987 0.107 -0.135 ...               |
-| $ fbody.acc.jerk.stdz                   | num  -0.961 -0.988 -0.992 -0.535 -0.402 ...              |
-| $ fbody.gyro.stdx                       | num  -0.882 -0.978 -0.987 -0.517 -0.495 ...              |
-| $ fbody.gyro.stdy                       | num  -0.9512 -0.9623 -0.9871 -0.0335 -0.1814 ...         |
-| $ fbody.gyro.stdz                       | num  -0.917 -0.944 -0.982 -0.437 -0.238 ...              |
-| $ fbody.acc.mag.std                     | num  -0.798 -0.928 -0.982 -0.398 -0.187 ...              |
-| $ fbodybody.acc.jerk.mag.std            | num  -0.922 -0.982 -0.993 -0.103 -0.104 ...              |
-| $ fbodybody.gyro.mag.std                | num  -0.824 -0.932 -0.978 -0.321 -0.398 ...              |
-| $ fbodybody.gyro.jerk.mag.std           | num  -0.933 -0.987 -0.995 -0.382 -0.392 ...              | 
-
+| $ variable names                       | type of var. and 1st four values ...                 |
+|----------------------------------------|------------------------------------------------------|
+| $ subject                              | chr  "1" "1" "1" "1" ...                             |
+| $ activity                             | chr  "standing" "standing" "standing" "standing" ... |
+| $ timebodyaccmeanx                     | num  0.289 0.278 0.28 0.279 0.277 ...                |
+| $ timebodyaccmeany                     | num  -0.0203 -0.0164 -0.0195 -0.0262 -0.0166 ...     |
+| $ timebodyaccmeanz                     | num  -0.133 -0.124 -0.113 -0.123 -0.115 ...          |
+| $ timegravityaccmeanx                  | num  0.963 0.967 0.967 0.968 0.968 ...               |
+| $ timegravityaccmeany                  | num  -0.141 -0.142 -0.142 -0.144 -0.149 ...          |
+| $ timegravityaccmeanz                  | num  0.1154 0.1094 0.1019 0.0999 0.0945 ...          |
+| $ timebodyaccjerkmeanx                 | num  0.078 0.074 0.0736 0.0773 0.0734 ...            |
+| $ timebodyaccjerkmeany                 | num  0.005 0.00577 0.0031 0.02006 0.01912 ...        |
+| $ timebodyaccjerkmeanz                 | num  -0.06783 0.02938 -0.00905 -0.00986 0.01678 ...  |
+| $ timebodygyromeanx                    | num  -0.0061 -0.0161 -0.0317 -0.0434 -0.034 ...      |
+| $ timebodygyromeany                    | num  -0.0314 -0.0839 -0.1023 -0.0914 -0.0747 ...     |
+| $ timebodygyromeanz                    | num  0.1077 0.1006 0.0961 0.0855 0.0774 ...          |
+| $ timebodygyrojerkmeanx                | num  -0.0992 -0.1105 -0.1085 -0.0912 -0.0908 ...     |
+| $ timebodygyrojerkmeany                | num  -0.0555 -0.0448 -0.0424 -0.0363 -0.0376 ...     |
+| $ timebodygyrojerkmeanz                | num  -0.062 -0.0592 -0.0558 -0.0605 -0.0583 ...      |
+| $ timebodyaccmagmean                   | num  -0.959 -0.979 -0.984 -0.987 -0.993 ...          |
+| $ timegravityaccmagmean                | num  -0.959 -0.979 -0.984 -0.987 -0.993 ...          |
+| $ timebodyaccjerkmagmean               | num  -0.993 -0.991 -0.989 -0.993 -0.993 ...          |
+| $ timebodygyromagmean                  | num  -0.969 -0.981 -0.976 -0.982 -0.985 ...          |
+| $ timebodygyrojerkmagmean              | num  -0.994 -0.995 -0.993 -0.996 -0.996 ...          |
+| $ freqbodyaccmeanx                     | num  -0.995 -0.997 -0.994 -0.995 -0.997 ...          |
+| $ freqbodyaccmeany                     | num  -0.983 -0.977 -0.973 -0.984 -0.982 ...          |
+| $ freqbodyaccmeanz                     | num  -0.939 -0.974 -0.983 -0.991 -0.988 ...          |
+| $ freqbodyaccmeanfreqx                 | num  0.252 0.271 0.125 0.029 0.181 ...               |
+| $ freqbodyaccmeanfreqy                 | num  0.1318 0.0429 -0.0646 0.0803 0.058 ...          |
+| $ freqbodyaccmeanfreqz                 | num  -0.0521 -0.0143 0.0827 0.1857 0.5598 ...        |
+| $ freqbodyaccjerkmeanx                 | num  -0.992 -0.995 -0.991 -0.994 -0.996 ...          |
+| $ freqbodyaccjerkmeany                 | num  -0.987 -0.981 -0.982 -0.989 -0.989 ...          |
+| $ freqbodyaccjerkmeanz                 | num  -0.99 -0.99 -0.988 -0.991 -0.991 ...            |
+| $ freqbodyaccjerkmeanfreqx             | num  0.8704 0.6085 0.1154 0.0358 0.2734 ...          |
+| $ freqbodyaccjerkmeanfreqy             | num  0.2107 -0.0537 -0.1934 -0.093 0.0791 ...        |
+| $ freqbodyaccjerkmeanfreqz             | num  0.2637 0.0631 0.0383 0.1681 0.2924 ...          |
+| $ freqbodygyromeanx                    | num  -0.987 -0.977 -0.975 -0.987 -0.982 ...          |
+| $ freqbodygyromeany                    | num  -0.982 -0.993 -0.994 -0.994 -0.993 ...          |
+| $ freqbodygyromeanz                    | num  -0.99 -0.99 -0.987 -0.987 -0.989 ...            |
+| $ freqbodygyromeanfreqx                | num  -0.2575 -0.0482 -0.2167 0.2169 -0.1533 ...      |
+| $ freqbodygyromeanfreqy                | num  0.0979 -0.4016 -0.0173 -0.1352 -0.0884 ...      |
+| $ freqbodygyromeanfreqz                | num  0.5472 -0.0682 -0.1107 -0.0497 -0.1622 ...      |
+| $ freqbodyaccmagmean                   | num  -0.952 -0.981 -0.988 -0.988 -0.994 ...          |
+| $ freqbodyaccmagmeanfreq               | num  -0.0884 -0.0441 0.2579 0.0736 0.3943 ...        |
+| $ freqbodybodyaccjerkmagmean           | num  -0.994 -0.99 -0.989 -0.993 -0.996 ...           |
+| $ freqbodybodyaccjerkmagmeanfreq       | num  0.347 0.532 0.661 0.679 0.559 ...               |
+| $ freqbodybodygyromagmean              | num  -0.98 -0.988 -0.989 -0.989 -0.991 ...           |
+| $ freqbodybodygyromagmeanfreq          | num  -0.129 -0.272 -0.2127 -0.0357 -0.2736 ...       |
+| $ freqbodybodygyrojerkmagmean          | num  -0.992 -0.996 -0.995 -0.995 -0.995 ...          |
+| $ freqbodybodygyrojerkmagmeanfreq      | num  -0.0743 0.1581 0.4145 0.4046 0.0878 ...         |
+| $ angletimebodyaccmeangravity          | num  -0.1128 0.0535 -0.1186 -0.0368 0.1233 ...       |
+| $ angletimebodyaccjerkmeangravitymean  | num  0.0304 -0.00743 0.1779 -0.01289 0.12254 ...     |
+| $ angletimebodygyromeangravitymean     | num  -0.465 -0.733 0.101 0.64 0.694 ...              |
+| $ angletimebodygyrojerkmeangravitymean | num  -0.0184 0.7035 0.8085 -0.4854 -0.616 ...        |
+| $ anglexgravitymean                    | num  -0.841 -0.845 -0.849 -0.849 -0.848 ...          |
+| $ angleygravitymean                    | num  0.18 0.18 0.181 0.182 0.185 ...                 |
+| $ anglezgravitymean                    | num  -0.0586 -0.0543 -0.0491 -0.0477 -0.0439 ...     |
+| $ timebodyaccstdx                      | num  -0.995 -0.998 -0.995 -0.996 -0.998 ...          |
+| $ timebodyaccstdy                      | num  -0.983 -0.975 -0.967 -0.983 -0.981 ...          |
+| $ timebodyaccstdz                      | num  -0.914 -0.96 -0.979 -0.991 -0.99 ...            |
+| $ timegravityaccstdx                   | num  -0.985 -0.997 -1 -0.997 -0.998 ...              |
+| $ timegravityaccstdy                   | num  -0.982 -0.989 -0.993 -0.981 -0.988 ...          |
+| $ timegravityaccstdz                   | num  -0.878 -0.932 -0.993 -0.978 -0.979 ...          |
+| $ timebodyaccjerkstdx                  | num  -0.994 -0.996 -0.991 -0.993 -0.996 ...          |
+| $ timebodyaccjerkstdy                  | num  -0.988 -0.981 -0.981 -0.988 -0.988 ...          |
+| $ timebodyaccjerkstdz                  | num  -0.994 -0.992 -0.99 -0.993 -0.992 ...           |
+| $ timebodygyrostdx                     | num  -0.985 -0.983 -0.976 -0.991 -0.985 ...          |
+| $ timebodygyrostdy                     | num  -0.977 -0.989 -0.994 -0.992 -0.992 ...          |
+| $ timebodygyrostdz                     | num  -0.992 -0.989 -0.986 -0.988 -0.987 ...          |
+| $ timebodygyrojerkstdx                 | num  -0.992 -0.99 -0.988 -0.991 -0.991 ...           |
+| $ timebodygyrojerkstdy                 | num  -0.993 -0.997 -0.996 -0.997 -0.996 ...          |
+| $ timebodygyrojerkstdz                 | num  -0.992 -0.994 -0.992 -0.993 -0.995 ...          |
+| $ timebodyaccmagstd                    | num  -0.951 -0.976 -0.988 -0.986 -0.991 ...          |
+| $ timegravityaccmagstd                 | num  -0.951 -0.976 -0.988 -0.986 -0.991 ...          |
+| $ timebodyaccjerkmagstd                | num  -0.994 -0.992 -0.99 -0.993 -0.996 ...           |
+| $ timebodygyromagstd                   | num  -0.964 -0.984 -0.986 -0.987 -0.989 ...          |
+| $ timebodygyrojerkmagstd               | num  -0.991 -0.996 -0.995 -0.995 -0.995 ...          |
+| $ freqbodyaccstdx                      | num  -0.995 -0.999 -0.996 -0.996 -0.999 ...          |
+| $ freqbodyaccstdy                      | num  -0.983 -0.975 -0.966 -0.983 -0.98 ...           |
+| $ freqbodyaccstdz                      | num  -0.906 -0.955 -0.977 -0.99 -0.992 ...           |
+| $ freqbodyaccjerkstdx                  | num  -0.996 -0.997 -0.991 -0.991 -0.997 ...          |
+| $ freqbodyaccjerkstdy                  | num  -0.991 -0.982 -0.981 -0.987 -0.989 ...          |
+| $ freqbodyaccjerkstdz                  | num  -0.997 -0.993 -0.99 -0.994 -0.993 ...           |
+| $ freqbodygyrostdx                     | num  -0.985 -0.985 -0.977 -0.993 -0.986 ...          |
+| $ freqbodygyrostdy                     | num  -0.974 -0.987 -0.993 -0.992 -0.992 ...          |
+| $ freqbodygyrostdz                     | num  -0.994 -0.99 -0.987 -0.989 -0.988 ...           |
+| $ freqbodyaccmagstd                    | num  -0.956 -0.976 -0.989 -0.987 -0.99 ...           |
+| $ freqbodybodyaccjerkmagstd            | num  -0.994 -0.992 -0.991 -0.992 -0.994 ...          |
+| $ freqbodybodygyromagstd               | num  -0.961 -0.983 -0.986 -0.988 -0.989 ...          |
+| $ freqbodybodygyrojerkmagstd           | num  -0.991 -0.996 -0.995 -0.995 -0.995 ...          |
