@@ -8,28 +8,48 @@
 
 ## Initial data:
    the supplied initial data files came from data collected from the accelerometers from the Samsung Galaxy S smartphone
-   the Internet files came from the website:
+   the Internet files came from the source website at:
+   
      http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
    The data for the project came from a zip file:
+   
      https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
    
-   all of the initial data used in the R script program came from the following 8 files in the 'zip' file:
-   activity_labels.txt
-   features.txt
-   subject_train.txt
-   X_train.txt
-   y_train.txt
-   subject_test.txt
-   X_test.txt
-   y_test.txt
+####   All of the initial data used in the R script program came from the following 8 files in the 'zip' file:
+   1. activity_labels.txt
+   2. features.txt
+   3. subject_train.txt
+   4. X_train.txt
+   5. y_train.txt
+   6. subject_test.txt
+   7. X_test.txt
+   8. y_test.txt
    
    the output of the R script file is a tidy dataset that I named tidydata.txt and uploaded via the project webpage
    
-## tidydata.txt info  
-   'data.frame':	180 obs. of  88 variables:
-| $ subject                               | chr  "1" "1" "1" "1" ...                                 |
+## tidydata.txt info 
+   Below is a table giving info about the variables gotten by using the R function str() on the data 
+   used in writing the output tidydata.txt file.
+   
+   The 88 variable units(see table below this line):
+
+| $ variable                              | Units                                                    |
 |-----------------------------------------|----------------------------------------------------------|
+| $ subject                               | # is an identifying number for each person (1:30)        |
+| $ activity                              | word for activity type: "laying" "sitting" "standing"    |
+|                                         | "walking" "walking.upstairs" "walking.downstairs"        |
+| $ tbody.acc.meanx                       | # is a real number                                       |
+| ...   86 total num variables            | " units were all normalized between 1 and -1             | 
+| $ fbodybody.gyro.jerk.mag.std           | " see source website given above for measured units etc. | 
+   
+   
+   
+   'data.frame':	180 obs. of  88 variables(names in table below this line):
+   
+| $ variable                              | type  actual data ...                                    |
+|-----------------------------------------|----------------------------------------------------------|
+| $ subject                               | chr  "1" "1" "1" "1" ...                                 |
 | $ activity                              | chr  "laying" "sitting" "standing" "walking" ...         |
 | $ tbody.acc.meanx                       | num  0.222 0.261 0.279 0.277 0.289 ...                   |
 | $ tbody.acc.meany                       | num  -0.04051 -0.00131 -0.01614 -0.01738 -0.00992 ...    |
@@ -117,6 +137,7 @@
 | $ fbodybody.acc.jerk.mag.std            | num  -0.922 -0.982 -0.993 -0.103 -0.104 ...              |
 | $ fbodybody.gyro.mag.std                | num  -0.824 -0.932 -0.978 -0.321 -0.398 ...              |
 | $ fbodybody.gyro.jerk.mag.std           | num  -0.933 -0.987 -0.995 -0.382 -0.392 ...              | 
+
  The data consists of the mean value of the 86 num variables above and 180 obs. that were split out by 
    1. each of 30 'subject' ( 1 thru 30 ) and by
    2. each of six 'activity' (laying, sitting, standing, walking, walking.downstairs, walking.upstairs)
