@@ -1,18 +1,19 @@
 ## This Code Book has:
 
 ## Study Description:
-   the data study was done by Andy Savidge (andysavidge@gmail.com)
-   the study was done for a Getting and Cleaning Data Course PROJECT (via. a Coursera MOOC done in May 2014)
-   the initial data files for the project were given and an R script was written to get and clean
-      the initial data and produce a smaller tidy data that this codebook documents
+   * The data study was done by Andy Savidge (andysavidge@gmail.com)
+   * The study was done for a Getting and Cleaning Data Course PROJECT (via. a Coursera MOOC done in May 2014)
+   * The initial data files for the project were given and an R script was written to get and clean these data.
+   * The cleaned data was used to produce a smaller tidy data set named **tidydata.txt** that this codebook documents
 
 ## Initial data:
-   the supplied initial data files came from data collected from the accelerometers from the Samsung Galaxy S smartphone
-   the Internet files came from the source website at:
+   The supplied initial data files came from data collected from the accelerometers from the Samsung Galaxy S smartphone
+   
+   The Internet files came from the course provided source website at:
    
      http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-   The data for the project came from a zip file:
+   All the data for the project came from a course provided zip file at:
    
      https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
    
@@ -26,12 +27,18 @@
    7. X_test.txt
    8. y_test.txt
    
-   the output of the R script file is a tidy dataset that I named tidydata.txt and uploaded via the project webpage
+   The output of the R script file is the tidy dataset **tidydata.txt** and was uploaded via the project webpage
    
-## tidydata.txt info 
-   Below is a table giving info about the variables gotten by using the R function str() on the data 
-   used in writing the output tidydata.txt file.
-   
+## **tidydata.txt** info 
+   Below is a table giving info about the all variables gotten by using the R function str() on the cleaned data 
+   that was used in writing the output **tidydata.txt** file.
+
+   The **tidydata.txt** data consists of the mean value of the 86 num variables with 180 obs. that were split out by 
+   1. 'subject' each of 30 'subject' ( 1 thru 30 ) and by
+   2. 'activity' each of six 'activity' (laying, sitting, standing, walking, walking.downstairs, walking.upstairs)
+
+   The before getting 'mean' data had 10299 obs of 86 num variables and the two 'subject' and 'activity' variables
+
    The 88 variable units(see table below this line):
 
 | $ variable                              | Units                                                    |
@@ -138,7 +145,3 @@
 | $ fbodybody.gyro.mag.std                | num  -0.824 -0.932 -0.978 -0.321 -0.398 ...              |
 | $ fbodybody.gyro.jerk.mag.std           | num  -0.933 -0.987 -0.995 -0.382 -0.392 ...              | 
 
- The data consists of the mean value of the 86 num variables above and 180 obs. that were split out by 
-   1. each of 30 'subject' ( 1 thru 30 ) and by
-   2. each of six 'activity' (laying, sitting, standing, walking, walking.downstairs, walking.upstairs)
- The before getting 'mean' had 10299 obs of 86 num variables
