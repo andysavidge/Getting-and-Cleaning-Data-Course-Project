@@ -12,10 +12,11 @@ Data for project was downloaded from course provided Internet file at:
    
    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
        
-Unzipped all files and moved every file into just one subdirectory named 'data' on my computer. 
+Unzipped all files and moved every file into just one subdirectory named 'data' on my computer (a desktop
+PC running Windows 7 with all updates current). 
    
 This 'data' subdirectory is in my R my working directory and my R script uses ".\data\afilename.ext"
-to get the wanted "afilename.ext" data files.
+to read the data from the wanted "afilename.ext" data files.
    
 ## run_analysis.R script processed the starting data as follows:
 1. Merged training and test data sets (2 variable value files, 2 subject id files, 2 activity type files, one activity names file, and one time and frequency domain variable names file) to create one large data set. 
