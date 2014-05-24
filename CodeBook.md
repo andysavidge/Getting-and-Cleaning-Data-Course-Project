@@ -44,20 +44,21 @@ The before getting 'mean' data had 10299 obs of 86 num variables and the two 'su
 
 ####   The 88 variable units(see table below this line):
 
-| $ variable                              | type: Units                                                    |
-|-----------------------------------------|----------------------------------------------------------|
+| $ variable names                        | type: Units(see original source for number measured units)  |
+|-----------------------------------------|-------------------------------------------------------------|
 | $ subject                               | chr: is an identifying number for each person (1:30)        |
 | $ activity                              | chr: a word for activity: "laying" "sitting" "standing"     |
 |                                         | "walking" "walkingupstairs" "walkingdownstairs"             |
+|                                         |                                                             |
 | $ timebodyaccmeanx                      | num: real number (normalized between 1 and -1)              |
 | ...   86 total num variables            | ...: ...                                                    | 
 | $ freqbodybodygyrojerkmagstd            | num: see source website given above for measured units etc. | 
    
    
    
-####   Variable names of output 'data.frame':	180 obs. of  88 variables(names in table below this line):
+####   Variable names of output 'tidydata.txt':	180 obs. of  88 variables(names in table below this line):
    
-| $ variable names                       | type of var. and 1st four values ...                 |
+| $ variable names                       | type of var. and 1st few values ...                  |
 |----------------------------------------|------------------------------------------------------|
 | $ subject                              | chr  "1" "1" "1" "1" ...                             |
 | $ activity                             | chr  "standing" "standing" "standing" "standing" ... |
