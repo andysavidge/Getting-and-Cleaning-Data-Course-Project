@@ -40,7 +40,9 @@
    1. 'subject' each of 30 'subject' ( 1 thru 30 ) and by
    2. 'activity' each of six 'activity' (laying, sitting, standing, walking, walking.downstairs, walking.upstairs)
 
-The before getting 'mean' data had 10299 obs of 86 num variables and the two 'subject' and 'activity' variables
+   The before getting 'mean' data had 10299 obs of 86 num variables and the two 'subject' and 'activity' variables.
+   The tidy data set was written from a 'data frame':	180 obs. of  88 variables:  using the 'write.table()' with no
+   additional parameters so the items are in a space delimited text file.
 
 
 
