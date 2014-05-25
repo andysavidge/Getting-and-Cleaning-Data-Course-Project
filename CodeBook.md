@@ -1,3 +1,5 @@
+#CodeBook.md for: *tidydata.txt*
+
 ## Study Description:
    * The data study was done by Andy Savidge (andysavidge@gmail.com)
    * The study was done for a Getting and Cleaning Data Course PROJECT (via. a Coursera MOOC done in May 2014)
@@ -28,7 +30,7 @@
 ####   The output of the R script file is the tidy dataset **tidydata.txt** and was uploaded via the project webpage
    
 ## **tidydata.txt** info 
-   Below is a table giving info about the all variables gotten by using the R function str() on the cleaned data 
+   Below is a table giving info about all the variables gotten by using the R function str() on the cleaned data 
    that was used in writing the output **tidydata.txt** file.
 
    Variable names were gotten from the features.txt and activity_labels.txt.   These original variable names were 
