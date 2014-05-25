@@ -30,11 +30,10 @@
 ####   The output of the R script file is the tidy dataset **tidydata.txt** and was uploaded via the project webpage
    
 ## **tidydata.txt** info 
-   Below is a table giving info about all the variables in the **tidydata.txt** file.
+   Below are two tables giving info about all the variables in the **tidydata.txt** file.
 
    Variable names were gotten from the features.txt and activity_labels.txt.   These original variable names were 
-   all convert to lowercase [a-z] letters and all non [a-z] characters were removed.  For name clarity the variable  
-   names beginning with t... and f... were changed to time... and freq... since these variables deal with time and
+   all converted to lowercase [a-z] letters and all non [a-z] characters were removed.  For name clarity the variable    names beginning with t... and f... were changed to time... and freq... since these variables deal with time and
    freq(uency) domains(see original documentation).
 
    The **tidydata.txt** data consists of the mean value of the 86 num variables with 180 obs. that were split out by 
@@ -42,6 +41,8 @@
    2. 'activity' each of six 'activity' (laying, sitting, standing, walking, walking.downstairs, walking.upstairs)
 
 The before getting 'mean' data had 10299 obs of 86 num variables and the two 'subject' and 'activity' variables
+
+
 
 ####   The 88 variable units(see table below this line):
 
