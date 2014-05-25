@@ -13,19 +13,20 @@ Data for project was downloaded from course provided Internet file at:
    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
        
 Unzipped all files and moved every file into just one subdirectory named 'data' on my computer (a desktop
-PC running Windows 7 with all updates current). 
+PC running Windows 7 with all updates current) that exists in my R working directory. 
+
+My run_analysis.R script assumes all the needed data files will be in a directory named 'data' that is in the current working directory. 
    
 This 'data' subdirectory is in my R my working directory and my R script uses ".\data\afilename.ext"
 to read the data from the wanted "afilename.ext" data files.
    
 ## run_analysis.R script processed the starting data as follows:
-1. Merged training and test data sets (2 variable value files, 2 subject id files, 2 activity type files, one activity names file, and one time and frequency domain variable names file) to create one large data set. 
-2. Added 561 cleaned up time and frequency domain variable names to this large data set.
-3. Added subject id.  
-4. Added activity type (converted from number to cleaned up text) to this large data set.
-5. Extracted from the large data set only the variable measurements on the mean and standard deviation 
-for each one of the 561 variables by selecting all variables names that contained either 'mean' or 'std' (a total of
-86 selected variables)
+1. Merged training and test data sets (2 variable value files, 2 subject id files, 2 activity type files, one activity names file, and one time and frequency domain variable names file) to create one large data frame.
+2. Added 561 cleaned up time and frequency domain variable names to this large data frame.
+3. Added subject ids to this data frame
+4. Added activity type (converted from number to cleaned up text) to this large data frame.
+5. Extracted from the large data frame only the measurements on the mean and standard deviation 
+for each measurement of the 561 variables by selecting all variables names that contained either 'mean' or 'std' (a total of 86 selected 'mean' and 'std' variables)
 6. Made a second, independent tidy data set with the means of the 86 variables for each activity variable and each subject variable via processing the above 'mean' & 'std' extracted data set.
 
 ## Additional Course Project items:
