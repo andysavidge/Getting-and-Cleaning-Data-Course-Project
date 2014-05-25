@@ -14,7 +14,7 @@ Data for project was downloaded from course provided Internet file at:
        
 Unzipped all files in the 'zip' file above using my desktop operating system.  Then moved every individual unzipped file into just one subdirectory named 'data'. This 'data' subdirectory is on my computer (a desktop PC running Windows 7 with all updates current) and is in the R working directory. 
 
-The run_analysis.R script assumes all the needed individual data files will be in a directory named 'data' that is in the current R working directory. 
+The run_analysis.R script assumes all the needed individual data files will be in a directory named 'data' that is in the current R working directory. Used library(data.table) and library(reshape2) in my R script for faster and easier processing.
    
 This 'data' subdirectory is in my R my working directory and my R script uses ".\data\afilename.ext"
 to read the data from the wanted "afilename.ext" data files.
