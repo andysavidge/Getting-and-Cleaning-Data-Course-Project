@@ -1,4 +1,4 @@
-#CodeBook.md for: *tidydata.txt*
+#CodeBook.md for: **tidydata.txt**
 
 ## Study Description:
    * The data study was done by Andy Savidge (andysavidge@gmail.com)
@@ -30,8 +30,7 @@
 ####   The output of the R script file is the tidy dataset **tidydata.txt** and was uploaded via the project webpage
    
 ## **tidydata.txt** info 
-   Below is a table giving info about all the variables gotten by using the R function str() on the cleaned data 
-   that was used in writing the output **tidydata.txt** file.
+   Below is a table giving info about all the variables in the **tidydata.txt** file.
 
    Variable names were gotten from the features.txt and activity_labels.txt.   These original variable names were 
    all convert to lowercase [a-z] letters and all non [a-z] characters were removed.  For name clarity the variable  
